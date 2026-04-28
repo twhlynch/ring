@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Webring</title>
+		<meta name="description" content="awnser da fone" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=JetBrains+Mono&display=block"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="icon"
+			href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2 2'%3E%3Cpath d='M0 1A1 1 0 002 1 1 1 0 000 1' fill='%230d0d0d'/%3E%3C/svg%3E"
+			type="image/svg+xml"
+		/>
+
+		<meta name="theme-color" content="#0d0d0d" />
+
+		<style>
+			:root {
+				--bg: #0d0d0d;
+				--fg: #e6e6e6;
+				--muted: #888;
+				--border: #222;
+				--font: 'Space Grotesk', Menlo, monospace;
+				--mono: 'JetBrains Mono', Menlo, monospace;
+
+				--p1: 16px;
+				--p2: 24px;
+				--p3: 32px;
+				--p4: 48px;
+				--p5: 80px;
+			}
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				-ms-overflow-style: none;
+				scrollbar-width: none;
+			}
+			*::-webkit-scrollbar {
+				display: none;
+			}
+			::selection {
+				background: var(--border);
+			}
+
+			html,
+			body {
+				background: var(--bg);
+				color: var(--fg);
+				font-family: var(--font);
+				line-height: 1.6;
+			}
+			main {
+				max-width: 720px;
+				margin: var(--p5) auto;
+				padding: var(--p2);
+			}
+
+			h1 {
+				font-size: 1.4rem;
+				margin-block-end: 0.5rem;
+			}
+			p {
+				color: var(--muted);
+				margin-block-end: 1em;
+			}
+			nav {
+				margin: var(--p3) 0;
+				padding: var(--p1);
+				border: 1px solid var(--border);
+				display: flex;
+				justify-content: space-between;
+			}
+			a {
+				color: var(--fg);
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			code {
+				background: #111;
+				padding: 2px 4px;
+				border-radius: 4px;
+				font-family: var(--mono);
+				font-size: 0.85rem;
+			}
+			footer {
+				margin-block-start: var(--p4);
+				font-size: 0.85rem;
+				color: var(--muted);
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>webring</h1>
+			<p>awnser da fone</p>
+
+			<nav>
+				<a href="/left">← left</a>
+				<a href="/right">right →</a>
+			</nav>
+
+			<p>
+				this webring is powered by a
+				<a href="https://github.com/twhlynch/ring">cloudflare worker</a
+				>. each site links to <code>/left</code> and
+				<code>/right</code> for navigation by request origin.
+			</p>
+
+			<p>
+				to join, add your site to the list, and add the links to your
+				site.
+			</p>
+
+			<footer>
+				built by <a href="https://twhlynch.me">twhlynch</a>.
+			</footer>
+		</main>
+	</body>
+</html>

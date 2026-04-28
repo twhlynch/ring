@@ -1,0 +1,8 @@
+name = "ring"
+main = "worker.ts"
+compatibility_date = "2026-04-27"
+
+[[rules]]
+type = "Text"
+globs = ["**/*.html", "**/*.txt"]
+fallthrough = false
